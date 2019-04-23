@@ -1,3 +1,3 @@
-rm lilvue-backend
+rm lilvue_backend
 go build
-./lilvue-backend
+./lilvue_backend
