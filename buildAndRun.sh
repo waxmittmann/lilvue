@@ -1,4 +1,2 @@
-rm lilvue_backend
 (cd ./frontend/ && npm run build)
-go build
-./lilvue_backend
+(cd ./backend && rm lilvue_backend && go build && ./lilvue_backend)
