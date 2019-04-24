@@ -19,9 +19,6 @@ import Vue from 'vue';
 import VueResource from 'vue-resource';
 Vue.use(VueResource);
 
-// import Vue from 'vue';
-// Vue.use(require('vue-resource'));
-
 export default {
   name: 'app',
   components: {
