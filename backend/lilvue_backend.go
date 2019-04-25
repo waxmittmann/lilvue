@@ -24,6 +24,7 @@ func main() {
 // Set up and test db connection
 func setupDb() {
 	db.Ping()
+	db.Query()
 }
 
 // Set up routing and start server
