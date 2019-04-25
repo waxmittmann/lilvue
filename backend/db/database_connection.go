@@ -35,6 +35,20 @@ func Ping() {
 	log.Println("Ping Success")
 }
 
+func Insert() { 
+	db := create_db()
+
+	_, err := db.Exec(
+		"INSERT INTO Users (Name, Email) VALUES ($1, $2)",
+		"jekkie",
+		"jekkie@jekjek.comn",
+	)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+}
+
 func Query() { 
 	db := create_db()
 
